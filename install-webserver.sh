@@ -1,14 +1,14 @@
 #!/bin/bash
 sudo apt-get update -y
-sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql &> /tmp/installation-setup.txt
+sudo apt-get install -y apache2 git php5 php5-imagick php5-curl mysql-client curl php5-mysql &> /tmp/installation-setup.txt
 
-git clone https://github.com/vinodh1989/ITMO-544-MP2-Application-Setup.git
+git clone https://github.com/vinodh1989/ITMO-544-MP-Final-Application-Setup.git
 
-sudo mv ./ITMO-544-MP2-Application-Setup/images /var/www/html/images
-sudo mv ./ITMO-544-MP2-Application-Setup/css /var/www/html/css
-sudo mv ./ITMO-544-MP2-Application-Setup/js /var/www/html/js
-sudo mv ./ITMO-544-MP2-Application-Setup/index.html /var/www/html
-sudo mv ./ITMO-544-MP2-Application-Setup/*.php /var/www/html
+sudo mv ./ITMO-544-MP-Final-Application-Setup/images /var/www/html/images
+sudo mv ./ITMO-544-MP-Final-Application-Setup/css /var/www/html/css
+sudo mv ./ITMO-544-MP-Final-Application-Setup/js /var/www/html/js
+sudo mv ./ITMO-544-MP-Final-Application-Setup/index.html /var/www/html
+sudo mv ./ITMO-544-MP-Final-Application-Setup/*.php /var/www/html
 
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 
